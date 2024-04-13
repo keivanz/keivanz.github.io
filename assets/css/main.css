@@ -91,7 +91,6 @@ body {
   --color-a: #ccc;
   --color-b: #afaf;
   --color-c: #33aa;
-  background: linear-gradient(45deg, var(--color-a), var(--color-b), var(--color-c));
 }
 
 main {
@@ -103,7 +102,6 @@ main {
 }
 
 .wrapper {
-  width: 300px;
   margin: 0 auto;
   aspect-ratio: 9/16;
   border-radius: 12px;
@@ -123,8 +121,8 @@ main {
   filter: blur(50px) brightness(1.5);
   left: 20%;
   top: 10%;
-  width: 70%;
-  height: 50%;
+  width: 20%;
+  height: 20%;
   border-radius: 25px;
   animation: blob 8s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
   transform-origin: 60%;
@@ -137,8 +135,8 @@ main {
   filter: blur(50px) brightness(1.5);
   left: 40%;
   top: 30%;
-  width: 70%;
-  height: 80%;
+  width: 20%;
+  height: 20%;
   border-radius: 25px;
   animation: blob 10s infinite cubic-bezier(0.215, 0.61, 0.355, 1) reverse;
   transform-origin: 60%;
@@ -149,17 +147,7 @@ main {
   z-index: 2;
 }
 
-.title {
-  line-height: 1.2;
-  font-size: 42px;
-}
-
-.label {
-  text-align: center;
-  font-size: 32px;
-}
-
-input[type="range"] {
+/*input[type="range"] {
   appearance: none;
   width: 100%;
   background: white;
@@ -184,7 +172,7 @@ input[type="range"]::-moz-range-thumb {
   height: 36px;
   border-radius: 36px;
   cursor: pointer;
-}
+}*/
 
 @keyframes blob {
   0% {
@@ -218,4 +206,4 @@ input[type="range"]::-moz-range-thumb {
   syntax: "<color>";
   inherits: true;
   initial-value: transparent;
-} */
+} 
