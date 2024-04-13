@@ -1,12 +1,6 @@
 repository : jekyllgems/bs5-starter
 github     : [metadata]
 
-# This is a bs5-starter template for Jekyll. 
-
-# If you need any help feel free to reach out on discord or email 
-# me and I will help in any way you need. If you want a custom theme
-# or plugin built you can hop on discord and we can discuss it.
-#
 # =============
 # SOCIAL LINKS 
 # =============
@@ -19,8 +13,8 @@ social:
   twitter          : jekyllcoder
   github           : leatheresque
   email            : jekyllcoder@gmail.com
-  discord          : leatheresque#3820
-  support_server   : https://discord.gg/8uc5FyPdHk
+
+logo: https://keivanz.github.io/keivanz_personal_site/img/favicons/favicon-32x32.png
 
 # ==========
 # SITE TITLE
