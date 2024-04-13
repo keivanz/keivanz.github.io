@@ -91,7 +91,6 @@ body {
   --color-a: #ccc;
   --color-b: #afaf;
   --color-c: #33aa;
-  background: linear-gradient(45deg, var(--color-a), var(--color-b), var(--color-c));
 }
 
 main {
