@@ -47,7 +47,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #
 # https://username.github.io/foobar 
 
-baseurl       : "/bs5-starter"
+baseurl       : "/keivanz_personal_site"
 
 # ===
 # URL
@@ -61,19 +61,10 @@ baseurl       : "/bs5-starter"
 # http://localhost:4000
 
 
-url            : "https://jekyllgems.github.io"
- 
-# =================
-# EXCERPT_SEPARATOR
-# =================
-#
-# This is used in your blog posts, you can see an example in any 
-# of the example blog posts included in this theme. It functions
-# to trim your posts when displaying them so it doesnt show the
-# entire post like on the front page. Feel free to change where
-# the excerpt ends.
+url            : "https://keivanz.github.io"
 
-excerpt_separator: <!--more-->
+exclude:
+  - 'README.md'
 
 # ==============
 # BUILD SETTINGS
