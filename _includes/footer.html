@@ -40,13 +40,13 @@
   Created by <a class="text-decoration-none" href="https://github.com/leatheresque" target="_blank">Keivan Zolfaghari</a> &copy; 2024
 
   <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown button
+    <button id="bd-theme" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Change theme
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li ><a data-bs-theme-value="light" class="dropdown-item" href="#"><svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>Light</a></li>
+      <li><a data-bs-theme-value="dark" class="dropdown-item" href="#"><svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>Dark</a></li>
+      <li><a data-bs-theme-value="auto" class="dropdown-item" href="#"><svg class="bi ms-auto d-none"><use href="#check2"></use></svg>Auto</a></li>
     </ul>
   </div>
   
