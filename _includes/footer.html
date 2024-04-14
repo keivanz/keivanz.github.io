@@ -1,35 +1,4 @@
-<div class="dropdown">
-  <button class="btn btn-link py-0 px-0 px-lg-0 dropdown-toggle d-flex align-items-center"
-          id="bd-theme"
-          type="button"
-          aria-expanded="false"
-          data-bs-toggle="dropdown"
-          data-bs-display="static"
-          aria-label="Toggle theme (auto)">
-    <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
-    <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="bd-theme-text">
-    <li>
-      <button type="button" class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
-        Light
-        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-      </button>
-    </li>
-    <li>
-      <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
-        Dark
-        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-      </button>
-    </li>
-    <li>
-      <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true">
-        Auto
-        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-      </button>
-    </li>
-  </ul>
-  </div>
+
 
 
 
@@ -41,13 +10,13 @@
       Change theme
     </button>
     <ul class="dropdown-menu">
-      <li ><a data-bs-theme-value="light" class="dropdown-item" href="#">
+      <li ><a data-bs-theme-value="light" class="dropdown-item" aria-pressed="false" href="#">
         <svg class="bi ms-auto d-none"><use href="#check2"></use></svg><i class="fa-solid fa-sun"></i>Light</a>
       </li>
-      <li><a data-bs-theme-value="dark" class="dropdown-item" href="#">
+      <li><a data-bs-theme-value="dark" class="dropdown-item" aria-pressed="false" href="#">
         <svg class="bi ms-auto d-none"><use href="#check2"></use></svg><i class="fa-solid fa-moon"></i>Dark</a>
       </li>
-      <li><a data-bs-theme-value="auto" class="dropdown-item active" href="#">
+      <li><a data-bs-theme-value="auto" class="dropdown-item" aria-pressed="true" href="#">
         <svg class="bi ms-auto d-none"><use href="#check2"></use></svg><i class="fa-solid fa-circle-half-stroke"></i>Auto</a>
       </li>
     </ul>
