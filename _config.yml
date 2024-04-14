@@ -66,6 +66,9 @@ include:
 assets:
     - "*"
 
+sass:
+    sass_dir: _sass
+
 exclude:
   - 'README.md'
 
