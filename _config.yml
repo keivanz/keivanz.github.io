@@ -57,6 +57,12 @@ baseurl       : "/keivanz_personal_site"
 
 url            : "https://keivanz.github.io"
 
+include:
+  - 'assets'
+
+assets:
+    - "*"
+
 exclude:
   - 'README.md'
 
