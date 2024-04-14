@@ -62,7 +62,7 @@ url            : "https://keivanz.github.io/keivanz_personal_site"
 
 include:
   - 'assets'
-  - 'pages'
+  - '_pages'
 
 assets:
     - "*"
