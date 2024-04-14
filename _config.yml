@@ -16,13 +16,13 @@ social:
 
 logo: https://keivanz.github.io/keivanz_personal_site/assets/img/favicons/favicon-32x32.png
 
-sass:
-  style: compressed
+
 
 # ==========
 # SITE TITLE
 # ==========
-#
+#sass:
+ # style: compressed
 # This is the title of your website for example, "The Moo York Times" :)
 
 title: Keivan Zolfaghari
