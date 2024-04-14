@@ -1,4 +1,4 @@
-repository : jekyllgems/bs5-starter
+repository : keivanz/keivanz_personal_site
 github     : [metadata]
 
 # =============
@@ -41,7 +41,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #
 # https://username.github.io/foobar 
 
-baseurl       : "/keivanz_personal_site"
+baseurl       : "https://keivanz.github.io/keivanz_personal_site"
 
 # ===
 # URL
@@ -55,7 +55,7 @@ baseurl       : "/keivanz_personal_site"
 # http://localhost:4000
 
 
-url            : "https://keivanz.github.io"
+url            : "https://keivanz.github.io/keivanz_personal_site"
 
 include:
   - 'assets'
