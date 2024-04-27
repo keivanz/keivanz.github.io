@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
+/*
 (() => {
     'use strict'
   
@@ -98,3 +99,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
     })
   })()
+  */
