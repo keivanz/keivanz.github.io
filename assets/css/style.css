@@ -6,13 +6,34 @@
   margin:0 10px;
 }*/
 
+/* variable overrides */
+$font-size-base:              0.8rem;
 
 :root {
   --bs-font-serif: "Cormorant Garamond";
   --bs-font-sans-serif: "Inter", "Geist", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /*font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "onum", "kern", "liga", "clig", "calt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-.inter-body {
+:root, 
+[data-bs-theme=light] {
+  --bs-body-bg: #fff;
+}
+[data-bs-theme=dark] {
+  color-scheme: dark;
+  --bs-body-bg: #212529;
+}
+
+.inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -27,7 +48,6 @@
   font-weight: 500;
   font-style: italic;
 }
-
 
 .cormorant-garamond-light {
   font-family: "Cormorant Garamond", serif;
@@ -184,19 +204,6 @@ $color-mode-type: data;
   z-index: 1500;
 }
 
-
-:root {
-  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "onum", "kern", "liga", "clig", "calt";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
 
 html,
 body {
