@@ -1,30 +1,11 @@
 <footer class="pt-5 my-5 text-body-secondary border-top">
-  Created by <a class="text-decoration-none" href="/">Keivan Zolfaghari</a> &copy; 2024
-  <br>
-  Colophon
-
+  <ul class="list-inline">
+    <li class="list-inline-item">Created by <a class="text-decoration-none" href="/">Keivan Zolfaghari</a> &copy; {{ site.time | date: '%Y' }}</li>
+    <li class="list-inline-item">Colophon</li>
+    <li class="list-inline-item">
   <div class="form-check form-switch">
     <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
     <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
-</div>
-
-
-  <div class="dropdown mt-3">
-    <button id="bd-theme-text" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)" aria-expanded="false">
-      Change theme
-    </button>
-    <ul class="dropdown-menu">
-      <li ><button data-bs-theme-value="light" class="dropdown-item inactive" aria-pressed="false" href="#">
-        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg><i class="fa-solid fa-sun me-2"></i>Light</button>
-      </li>
-      <li><button data-bs-theme-value="dark" class="dropdown-item inactive" aria-pressed="false" href="#">
-        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg><i class="fa-solid fa-moon me-2"></i>Dark</button>
-      </li>
-      <li><hr class="dropdown-divider"></li>
-      <li><button data-bs-theme-value="auto" class="dropdown-item inactive" aria-pressed="true" href="#">
-        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
-      </li>
-    </ul>
-  </div>
-  
+</div></li>
+  </ul>
 </footer>
