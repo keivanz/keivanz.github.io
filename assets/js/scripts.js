@@ -4,14 +4,25 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  */
 
-window.onload = function() {
-  document.getElementById('themer').addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-bs-theme')
-    const inverted = current == 'dark' ? 'light' : 'dark'
-    document.documentElement.setAttribute('data-bs-theme', inverted)
-    document.getElementById('nav').setAttribute('data-bs-theme', current)
-  })
-}
+document.addEventListener('DOMContentLoaded', (event) => {
+  const htmlElement = document.documentElement;
+  const switchElement = document.getElementById('darkModeSwitch');
+
+  // Set the default theme to dark if no setting is found in local storage
+  const currentTheme = localStorage.getItem('bsTheme') || 'dark';
+  htmlElement.setAttribute('data-bs-theme', currentTheme);
+  switchElement.checked = currentTheme === 'dark';
+
+  switchElement.addEventListener('change', function () {
+      if (this.checked) {
+          htmlElement.setAttribute('data-bs-theme', 'dark');
+          localStorage.setItem('bsTheme', 'dark');
+      } else {
+          htmlElement.setAttribute('data-bs-theme', 'light');
+          localStorage.setItem('bsTheme', 'light');
+      }
+  });
+});
 
 (() => {
     'use strict'
