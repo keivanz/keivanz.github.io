@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-/* footer seperators */
+/* footer seperators 
 .list-inline li:not(:last-child):after {
   content:'・';
   margin:0 10px;
-}
+}*/
 
 
 :root {
