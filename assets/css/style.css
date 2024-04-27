@@ -26,11 +26,18 @@ $font-size-base:              0.8rem;
 
 :root, 
 [data-bs-theme=light] {
-  --bs-body-bg: #fff;
+  --bs-body-bg: #f6f6f4;
 }
 [data-bs-theme=dark] {
   color-scheme: dark;
-  --bs-body-bg: #212529;
+  --bs-body-bg: #0b1215 /*212529*/;
+}
+
+@import "./bootstrap_5_3_min.css";
+
+::selection {
+  background-color: var(--bs-secondary-text-emphasis);
+  color: var(--bs-secondary-bg);
 }
 
 .inter {
