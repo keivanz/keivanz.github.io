@@ -1,7 +1,13 @@
 ---
 ---
 
-@charset "utf-8";
+/* @charset "utf-8"; */
+
+
+@import "bootstrap/bootstrap";
+@import "base";
+
+/*
 
 @import "bootstrap/functions";
 
@@ -26,7 +32,10 @@
   }
 }*/
 
+/*
 @import "style.css";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "bootstrap_5_3_min.css";
+
+*/

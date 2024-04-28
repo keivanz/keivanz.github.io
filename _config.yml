@@ -60,15 +60,13 @@ baseurl       : "https://keivanz.github.io"
 
 url            : "https://keivanz.github.io"
 
-include:
-  - 'assets'
-  - '_pages'
 
 sass:
   style: expanded
 
-assets:
-    - "*"
+
+
+    
 
 exclude:
   - 'README.md'
@@ -76,6 +74,15 @@ exclude:
 # ==============
 # BUILD SETTINGS
 # ==============
+
+# include:
+#   - 'assets'
+#   - '_pages'
+
+# assets:
+#     - "*"
+
+    
 #
 # These are build settings needed for when you run "jekyll serve"
 # commands. You can change these, but be careful because they can
