@@ -105,3 +105,4 @@ exclude:
 
 plugins:
   - jekyll-feed
+  - jekyll-sass-converter
