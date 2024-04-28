@@ -76,8 +76,8 @@ exclude:
 # ==============
 
 # include:
-#   - 'assets'
-#   - '_pages'
+#    - 'assets'
+#    - '_pages'
 
 # assets:
 #     - "*"
