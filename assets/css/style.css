@@ -9,6 +9,8 @@
 /* variable overrides */
 $font-size-base:              0.8rem;
 
+--bs-btn-bg: red !default;
+
 :root {
   --bs-font-serif: "Cormorant Garamond";
   --bs-font-sans-serif: "Inter", "Geist", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -22,6 +24,14 @@ $font-size-base:              0.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+:root, 
+[data-bs-theme=light] {
+  --bs-body-bg: #f6f6f4;
+}
+[data-bs-theme=dark] {
+  --bs-body-bg: #0b1215 /*212529*/;
 }
 
 :root, 
