@@ -6,8 +6,8 @@
 // Our variables
 $bs-body-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
---bs-body-bg: #000;
---bs-btn-bg: red;
+$bs-body-bg: #000;
+$bs-btn-bg: red;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
