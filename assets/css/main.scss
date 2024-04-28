@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
 // Our variables
---bs-body-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//--bs-body-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 --bs-body-bg: #000 !default;
 //--bs-btn-bg: red !default;
@@ -18,11 +18,11 @@
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
+/*@mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
   }
-}
+}*/
 
 @import "style.css";
 
