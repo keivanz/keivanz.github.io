@@ -65,7 +65,6 @@ include:
   - '_pages'
 
 sass:
-  sass_dir: assets/css
   style: expanded
 
 assets:
