@@ -4,10 +4,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
 // Our variables
---bs-body-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+--bs-body-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
---bs-body-bg: #000;
---bs-btn-bg: red;
+--bs-body-bg: #000 !default;
+--bs-btn-bg: red !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
