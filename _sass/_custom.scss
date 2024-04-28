@@ -1,25 +1,10 @@
-@charset "UTF-8";
-
 /* footer seperators 
 .list-inline li:not(:last-child):after {
   content:'・';
   margin:0 10px;
 }*/
 
-/* variable overrides */
-$font-size-base:              0.8rem;
-
-$body-bg: red;
-
 :root {
-  --bs-font-serif: "Cormorant Garamond";
-  --bs-font-sans-serif: "Inter", "Geist", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
-  --bs-btn-bg: red;
-
-  /*font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;*/
-  line-height: 1.5;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   font-feature-settings: "onum", "kern", "liga", "clig", "calt";
@@ -27,25 +12,6 @@ $body-bg: red;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-:root, 
-[data-bs-theme=light] {
-  --bs-body-bg: #f6f6f4;
-}
-[data-bs-theme=dark] {
-  --bs-body-bg: #0b1215 /*212529*/;
-}
-
-:root, 
-[data-bs-theme=light] {
-  --bs-body-bg: #f6f6f4;
-}
-[data-bs-theme=dark] {
-  color-scheme: dark;
-  --bs-body-bg: #0b1215 /*212529*/;
-}
-
-@import "./bootstrap_5_3_min.css";
 
 ::selection {
   background-color: var(--bs-secondary-text-emphasis);
