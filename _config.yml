@@ -14,7 +14,7 @@ social:
   github           : leatheresque
   email            : jekyllcoder@gmail.com
 
-logo: https://keivanz.github.io/keivanz_personal_site/assets/img/favicons/favicon-32x32.png
+logo: https://keivanz.github.io/assets/img/favicons/favicon-32x32.png
 
 
 
@@ -44,7 +44,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #
 # https://username.github.io/foobar 
 
-baseurl       : "https://keivanz.github.io/keivanz_personal_site"
+baseurl       : "https://keivanz.github.io"
 
 # ===
 # URL
@@ -58,7 +58,7 @@ baseurl       : "https://keivanz.github.io/keivanz_personal_site"
 # http://localhost:4000
 
 
-url            : "https://keivanz.github.io/keivanz_personal_site"
+url            : "https://keivanz.github.io"
 
 include:
   - 'assets'
