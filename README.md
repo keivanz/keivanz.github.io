@@ -26,3 +26,7 @@ https://github.com/404GamerNotFound/bootstrap-5.3-dark-mode-light-mode-switch
 ## Screenshots
 
 ![screenshot](img/screenshot.png)
+
+
+Todo
+- dependencies alerts
