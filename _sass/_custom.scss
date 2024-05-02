@@ -204,7 +204,7 @@ main {
   align-items: center;
   justify-content: center; */
   width: 100%;
-/*  min-height: 100dvh; */
+  min-height: 60dvh; /*helps ensure footer at bottom */
 }
 
 .wrapper {

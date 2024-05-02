@@ -1,32 +1,12 @@
 repository : keivanz/keivanz_personal_site
 github     : [metadata]
 
-# =============
-# SOCIAL LINKS 
-# =============
-#
-# This section handles your social network links displayed across
-# your site in liquid tags as site.social.NAME feel free to reach
-# out to me using these if you need any help.
-
-social:
-  twitter          : jekyllcoder
-  github           : leatheresque
-  email            : jekyllcoder@gmail.com
-
-logo: https://keivanz.github.io/assets/img/favicons/favicon-32x32.png
-
-
+# logo: https://keivanz.github.io/assets/img/favicons/favicon-32x32.png
 
 # ==========
 # SITE TITLE
 # ==========
-#sass:
- # style: compressed
-# This is the title of your website for example, "The Moo York Times" :)
-
 title: Keivan Zolfaghari
-
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to your new site, replace this description
 
@@ -50,23 +30,10 @@ baseurl       : "https://keivanz.github.io"
 # URL
 # ===
 #
-# This is the base hostname & protocol for your site, as you see 
-# I use https://jekyllgems.github.io because this is a template 
-# and served live on my gh-pages site.
-#
-# Use localhost for local development
-# http://localhost:4000
-
-
 url            : "https://keivanz.github.io"
-
 
 sass:
   style: expanded
-
-
-
-    
 
 exclude:
   - 'README.md'
@@ -95,7 +62,6 @@ exclude:
 # =======
 # PLUGINS
 # =======
-#
 # This is just one of the plugins you can use with jekyll
 # you can find more useful plugins I have created at: 
 # 
