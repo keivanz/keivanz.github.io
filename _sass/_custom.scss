@@ -13,6 +13,20 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* customize primary dark - follow https://github.com/twbs/bootstrap/issues/37976 */
+$dark-primary: #aadd66;
+
+[data-bs-theme="dark"] {
+  --bs-primary: #{$dark-primary};
+  --bs-primary-bg-subtle: #{$dark-primary};
+  --bs-primary-bg-subtle-dark: #{$dark-primary};
+  
+  .btn-primary {
+    --bs-btn-bg: #{$dark-primary};
+  }
+}
+/*end customization */
+
 ::selection {
   background-color: var(--bs-secondary-text-emphasis);
   color: var(--bs-secondary-bg);
