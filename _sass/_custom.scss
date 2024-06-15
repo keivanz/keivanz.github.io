@@ -8,6 +8,25 @@
 @view-transition {
   navigation: auto;
 }
+::view-transition-old(root) {
+  /* transition from the old page */
+  animation: fade 0.2s linear forwards;
+}
+
+::view-transition-new(root) {
+  /* transition to the new page */
+  animation: fade 0.4s linear reverse;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 
 :root {
   font-synthesis: none;
