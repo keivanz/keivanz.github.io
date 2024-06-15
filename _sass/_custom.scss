@@ -13,6 +13,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+a {
+  text-underline-offset: .375em;
+
+}
+
 /* customize primary dark - follow https://github.com/twbs/bootstrap/issues/37976 */
 $dark-primary: #aadd66;
 
