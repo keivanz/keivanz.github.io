@@ -4,6 +4,11 @@
   margin:0 10px;
 }*/
 
+/* enable crosspage view transitions */
+@view-transition {
+  navigation: auto;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
