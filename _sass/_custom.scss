@@ -42,7 +42,6 @@
 
 a {
   text-underline-offset: .375em;
-
 }
 
 /* customize primary dark - follow https://github.com/twbs/bootstrap/issues/37976 */
@@ -73,73 +72,6 @@ $dark-primary: #aadd66;
     "slnt" 0;
 }
 
-.newsreader-italic {
-  font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.cormorant-garamond-light {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.cormorant-garamond-regular {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cormorant-garamond-medium {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.cormorant-garamond-semibold {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.cormorant-garamond-bold {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cormorant-garamond-light-italic {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.cormorant-garamond-regular-italic {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.cormorant-garamond-medium-italic {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.cormorant-garamond-semibold-italic {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.cormorant-garamond-bold-italic {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 @font-face {
 	font-family:Geist;
 	src:url(../font/Geist-1.3.0/statics-woff/Geist-Regular.woff2) format("woff");
@@ -152,107 +84,26 @@ $dark-primary: #aadd66;
     font-style:normal}
 
 
-
-
-/*
-$color-mode-type: data;
-@include color-mode(dark) {
-  .element {
-    color: var(--bs-primary-text-emphasis);
-    background-color: var(--bs-primary-bg-subtle);
-  }
-} */
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-violet-bg);
-  --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #5a23c8;
-  --bs-btn-active-border-color: #5a23c8;
-}
-.bd-mode-toggle {
-  z-index: 1500;
-}
-
-
 html,
 body {
-  margin: 0;
-  --color-a: #ccc;
-  --color-b: #afaf;
-  --color-c: #33aa;
+ /* margin: 0; */
   transition: background .05s;
 }
 
 main {
-/*  display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 100%;
-  min-height: 70dvh; /*helps ensure footer at bottom */
+  min-height: 75dvh; /*helps ensure footer at bottom */
 }
 
+a:hover {
+  text-decoration-color: rgba(var(--color), 0.8);
+  text-decoration-thickness: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .2s;
+}
+
+/*
 .wrapper {
   margin: 0 auto;
   aspect-ratio: 9/16;
@@ -297,7 +148,7 @@ main {
   position: relative;
   z-index: 2;
 }
-
+*/
 /*input[type="range"] {
   appearance: none;
   width: 100%;
@@ -324,7 +175,7 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 36px;
   cursor: pointer;
 }*/
-
+/*
 @keyframes blob {
   0% {
     translate: 0 0;
@@ -384,3 +235,4 @@ input[type="range"]::-moz-range-thumb {
     opacity: 1;
   }
 }
+*/
