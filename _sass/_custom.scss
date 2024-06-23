@@ -69,7 +69,9 @@ $dark-primary: #aadd66;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
-    "slnt" 0;
+    "slnt" 0, 
+    "dlig" 0,
+    "zero" 0;
 }
 
 @font-face {
@@ -107,6 +109,7 @@ a:hover {
 
 .name_lead {
   letter-spacing: -.2rem;
+  font-weight: 500;
 }
 
 /*
