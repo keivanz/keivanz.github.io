@@ -99,10 +99,14 @@ a {
 }
 a:hover {
   text-decoration-color: rgba(var(--color), 0.8);
-  text-decoration-thickness: 2px;
+ // text-decoration-thickness: 2px;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-duration: .2s;
+}
+
+.name_lead {
+  letter-spacing: -.2rem;
 }
 
 /*
