@@ -73,17 +73,17 @@ $dark-primary: #aadd66;
     "dlig" 0,
     "zero" 0;
 }
+.instrument-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-@font-face {
-	font-family:Geist;
-	src:url(../font/Geist-1.3.0/statics-woff/Geist-Regular.woff2) format("woff");
-	font-weight:400;
-	font-style:normal}
-  @font-face {
-    font-family:Geist;
-    src:url(../font/Geist-1.3.0/variable-woff/Geist-VR.woff2) format("woff");
-    font-weight:400;
-    font-style:normal}
+.instrument-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
 
 html,
