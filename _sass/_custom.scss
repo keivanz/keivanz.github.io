@@ -45,17 +45,17 @@
 }
 
 a {
-  text-underline-offset: .375em;
+  text-underline-offset: .4em;
   text-decoration-thickness: 1px;
   text-decoration-color:#CCC;
   transition: .25s ease;
+  transition-duration: .3s;
+  transition-property: all;
+
 }
 a:hover{
   text-decoration-color: currentcolor;
- /* text-decoration-color: rgba(var(--color), 0.8);*/
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .2s;
+/*  transition-timing-function: cubic-bezier(.4,0,.2,1); */
 }
 
 /* customize primary dark - follow https://github.com/twbs/bootstrap/issues/37976 */
