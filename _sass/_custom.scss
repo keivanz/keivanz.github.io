@@ -48,10 +48,8 @@ a {
   text-underline-offset: .4em;
   text-decoration-thickness: 1px;
   text-decoration-color:#CCC;
-  transition: .25s ease;
-  transition-duration: .3s;
+  transition: .3s ease;
   transition-property: all;
-
 }
 a:hover{
   text-decoration-color: currentcolor;
