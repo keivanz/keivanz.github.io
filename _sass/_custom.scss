@@ -53,11 +53,10 @@ a {
 }
 a:hover{
   text-decoration-color: currentcolor;
-/*  transition-timing-function: cubic-bezier(.4,0,.2,1); */
 }
 
 /* customize primary dark - follow https://github.com/twbs/bootstrap/issues/37976 */
-$dark-primary: #aadd66;
+$dark-primary: #7B896F; /* aadd66*/
 
 [data-bs-theme="dark"] {
   --bs-primary: #{$dark-primary};
@@ -86,7 +85,6 @@ $dark-primary: #aadd66;
 
 html,
 body {
- /* margin: 0; */
   transition: background .05s;
 }
 
@@ -110,7 +108,6 @@ main {
 
       &:hover {
         color: #000;
-       /* box-shadow: 0 2px 0 0 currentcolor;*/
       }
     }
     }

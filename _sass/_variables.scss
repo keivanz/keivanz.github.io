@@ -1,18 +1,20 @@
 $font-size-base: 0.9rem;
 
-$body-bg: #fbfbfb; /*fbfbfb fcf6eb f6f6f4*/
+$body-bg: #fff8f3; /*fbfbfb fcf6eb f6f6f4*/
 
-$btn-bg: #000;
+$btn-bg: #0D0F0D;
 
-$primary:#2d452f; /* 125b491D405C*/
-$secondary:#6B9D4A; /* 4C6A4B 003527 */
+$primary:#1F3A26; /* 2d452f 125b491D405C*/
+$secondary:#636363; /* 6B9D4A 4C6A4B 003527 */
 
 $font-serif: "Instrument Serif";
 $font-family-sans-serif:  "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
 
 /*$list-group-bg:#CFE2CE;*/
 /*list-group-active-bg
-list-group-action-hover-color:*/
+list-group-action-hover-color:
+list-group-action-hover-bg   - hover on specidic item
+list-group-action-active-bg  - item color on click */
 
 $display-font-sizes: (
   1: 6rem,
