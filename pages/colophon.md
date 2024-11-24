@@ -11,34 +11,16 @@ permalink: /colophon/
 
 ### This is a heading 3
 
-- First item
-- Second item
-- Third item
+Hand coded by Keivan. Open to ideas! Sharing how I did it in case you're on a similiar journey
 
-*italicized text*
+This site was built on [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/)
 
-**bold text**
+I use [Bootstrap](https://getbootstrap.com/) as the CSS framework.
+dark mode color switcher
+https://github.com/404GamerNotFound/bootstrap-5.3-dark-mode-light-mode-switch
 
-> This is a blockquote.
+Icons through 
 
-1. This is the first item
-2. This is the second item
-3. This is the third item
-    1. This is a nested list
-    2. More nested list
-4. This is the fourth item.
+Fonts
+Inter
 
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
----
-
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-
-- this site is made using
