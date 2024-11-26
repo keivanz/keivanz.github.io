@@ -74,6 +74,9 @@ $dark-primary: #7B896F; /* aadd66*/
   color: var(--bs-secondary-bg);
 }
 
+.font-serif {
+  font-family: var(--bs-font-serif);
+}
 .serif-regular {
   font-family: "Instrument Serif", serif;
   font-style: normal;
