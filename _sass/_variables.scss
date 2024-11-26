@@ -1,4 +1,4 @@
-$font-size-base: 0.9rem;
+$font-size-base: 1rem;
 
 $body-bg: #fcf9ee; /*fff8f3 fbfbfb fcf6eb f6f6f4*/
 
@@ -22,4 +22,12 @@ $display-font-sizes: (
   4: 3.5rem,
   5: 3rem,
   6: 2.5rem
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 560px,
+  lg: 560px,
+  xl: 560px,
+  xxl: 560px
 );
