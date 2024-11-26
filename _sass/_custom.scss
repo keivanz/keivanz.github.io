@@ -74,14 +74,14 @@ $dark-primary: #7B896F; /* aadd66*/
   color: var(--bs-secondary-bg);
 }
 
-.font-serif {
-  font-family: var(--bs-font-serif);
+.font_serif {
+  font-family: "Unna", ui-serif, Georgia, "Instrument Serif";
 }
-.serif-regular {
+.highlight_regular {
   font-family: "Instrument Serif", serif;
   font-style: normal;
 }
-.serif-italic {
+.highlight_italic {
   font-family: "Instrument Serif", serif;
   font-style: italic;
 }
