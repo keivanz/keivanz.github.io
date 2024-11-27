@@ -133,26 +133,31 @@ main {
     transform: translateY(0) translateX(0rem);
     opacity: 1;
     font-weight: 500;
+    font-size:1.3rem;
   }
 
   20% {
     transform: translateY(1.2rem) translateX(0rem);
     opacity: 0.5;
+    font-size:1.3rem;
   }
 
   40% {
     transform: translateY(1.2rem) translateX(0rem);
     opacity: 0.3;
+    font-size:1.3rem;
   }
 
   60% {
     transform: translateY(1.2rem) translateX(0rem);
     opacity: 0.2;
+    font-size:1.3rem;
   }
 
   100% {
     transform: translateY(1.2rem) translateX(-0rem);
     opacity: 0;
+    font-size:1.3rem;
   }
 }
 
