@@ -101,6 +101,24 @@ main {
     navigation: none;
   }
 }
+::view-transition-old(root) {
+  /* transition from the old page */
+  animation: fade 0.1s ease-in forwards;
+}
+::view-transition-new(root) {
+  /* transition to the new page */
+  animation: fade 0.2s ease-out reverse;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*
 .transition-element {
   view-transition-name: sitetitle;
 }
