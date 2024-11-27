@@ -118,10 +118,6 @@ main {
 //  }
 //}
 @supports (view-transition-name: none) {
-  .fade-in {
-    animation: fade-in 0.8s ease-in-out forwards;
-    opacity: 0;
-  }
   .sitetitle {view-transition-name: sitetitle;}
 }
 ::view-transition-old(sitetitle) {
@@ -157,24 +153,6 @@ main {
   100% {
     transform: translateY(24px) translateX(-1.3rem);
     opacity: 0;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0.6;
-  }
-
-  60% {
-    opacity: 0.8;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
 
