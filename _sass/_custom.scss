@@ -5,17 +5,6 @@
 }*/
 
 
-@view-transition {
-  /* required to enable cross-document view transitions*/
-  navigation: auto;
-}
-@media (prefers-reduced-motion) {
-  @view-transition {
-    navigation: none;
-  }
-}
-
-
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -102,6 +91,17 @@ main {
     }
     }
 }
+
+@view-transition {
+  /* required to enable cross-document view transitions*/
+  navigation: auto;
+}
+@media (prefers-reduced-motion) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
 
 .transition-element {
   view-transition-name: sitetitle;
