@@ -101,28 +101,30 @@ main {
     navigation: none;
   }
 }
-::view-transition-old(root) {
-  /* transition from the old page */
-  animation: fade 0.1s ease-in forwards;
-}
-::view-transition-new(root) {
-  /* transition to the new page */
-  animation: fade 0.2s ease-out reverse;
-}
-@keyframes fade {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
+
 @supports (view-transition-name: none) {
   .fade-in {
     animation: fade-in 0.8s ease-in-out forwards;
     opacity: 0;
   }
   .sitetitle {view-transition-name: sitetitle;}
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
