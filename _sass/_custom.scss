@@ -46,9 +46,9 @@
 
 a {
   text-underline-offset: .4em;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 1.5px;
   text-decoration-color:#CCC;
-  transition: .3s ease;
+  transition: .3s ease-out;
   transition-property: all;
 }
 a:hover{
@@ -88,7 +88,7 @@ $dark-primary: #7B896F; /* aadd66*/
 
 html,
 body {
-  transition: background .05s;
+  transition: background .05s ease-out;
 }
 
 main {
@@ -103,7 +103,7 @@ main {
 
 .social_links {
   color: inherit;
-  transition: .25s ease;
+  transition: .25s ease-out;
 
   &:hover {
     a {
