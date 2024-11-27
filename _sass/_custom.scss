@@ -178,7 +178,12 @@ main {
     opacity: 1;
   }
 }
-
+@supports (view-transition-name: none) {
+  .fade-in {
+    animation: fade-in 0.8s ease-in-out forwards;
+    opacity: 0;
+  }
+}
 
 /*
 .transition-element {
