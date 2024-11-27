@@ -6,6 +6,7 @@ permalink: /colophon/
 
 
 # This is a heading 1
+From time to time I offer [coach](/coach), [test2](/coach).
 
 ## This is a heading 2
 
