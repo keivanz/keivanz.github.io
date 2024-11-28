@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Building this site: colophon
+title: Building this site, a colophon
 permalink: /colophon/
 ---
 
