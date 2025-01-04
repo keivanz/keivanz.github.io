@@ -216,38 +216,32 @@ main {
 }
 
 ::view-transition-old(sitetitle) {
-  animation: fade-out .8s ease-in-out
+  animation: fade-out-title .8s ease-in-out
 }
 
 ::view-transition-new(sitetitle) {
-  animation: fade-in-up .4s ease-in-out
+  animation: fade-in-title .4s ease-in-out
 }
 
-@keyframes fade-out {
+@keyframes fade-out-title {
   0% {
       opacity: 1;
-      font-weight: 500;
-      transform: translateY(0)translate(-.2px)
   }
 
   20% {
       opacity: .5;
-      transform: translateY(1rem)translate(-.2px)
   }
 
   40% {
       opacity: .3;
-      transform: translateY(1rem)translate(-.2px)
   }
 
   60% {
       opacity: .2;
-      transform: translateY(1rem)translate(-.2px)
   }
 
   to {
       opacity: 0;
-      transform: translateY(1rem)translate(-.2px)
   }
 }
 
@@ -269,25 +263,21 @@ main {
   }
 }
 
-@keyframes fade-in-up {
+@keyframes fade-in-title {
   0% {
       opacity: 0;
-      transform: translateY(1rem)translate(-.2px)
   }
 
   20% {
       opacity: .5;
-      transform: translateY(1rem)translate(-.2px)
   }
 
   80% {
       opacity: .7;
-      transform: translateY(0)translate(-.2px)
   }
 
   to {
       opacity: 1;
-      transform: translateY(0)translate(-.2px)
   }
 }
 
