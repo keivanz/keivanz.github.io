@@ -101,6 +101,9 @@ main {
     navigation: none;
   }
 }
+@supports (view-transition-name: none) {
+  .sitetitle {view-transition-name: sitetitle;}
+}
 //::view-transition-old(root) {
 //  /* transition from the old page */
 //  animation: fade 0.1s ease-in forwards;
@@ -289,5 +292,3 @@ main {
       animation: fade-in .8s ease-in-out forwards
   }
 }*/
-
-//.spacing {padding-top: .4rem;}
