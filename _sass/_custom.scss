@@ -101,6 +101,7 @@ main {
     navigation: none;
   }
 }
+.sitetitle {view-transition-name: site_title;}
 @supports (view-transition-name: none) {
   .sitetitle {view-transition-name: site_title;}
 }
