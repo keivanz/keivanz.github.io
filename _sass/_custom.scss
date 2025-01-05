@@ -102,6 +102,12 @@ main {
   }
 }
 .sitetitle {view-transition-name: site_title;}
+
+::view-transition-group(site_title) {
+  height: 100%;
+}
+
+
 @supports (view-transition-name: none) {
   .sitetitle {view-transition-name: site_title;}
 }
