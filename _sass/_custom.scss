@@ -102,7 +102,7 @@ main {
   }
 }
 @supports (view-transition-name: none) {
-  .sitetitle {view-transition-name: sitetitle;}
+  .sitetitle {view-transition-name: site_title;}
 }
 //::view-transition-old(root) {
 //  /* transition from the old page */
