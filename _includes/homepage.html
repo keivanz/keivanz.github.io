@@ -28,36 +28,9 @@
 <p>[anything] @keivanz.com.</p>
 
 <div id="quote-container">
-  <h6 id="quote-title" style="display: none;">Random Quote</h2>
+  <h6 id="quote-title" class="text-body-secondary mt-5" style="display: none;">Random Quote</h2>
   <p id="quote"></p>
   <p id="author"></p>
+
+    <button type="button" class="btn btn-outline-primary" onclick="displayRandomQuote()">New Quote</button>
 </div>
-
-<script>
-  const quotes = [
-      {% for quote in site.data.quotes %}
-          { 
-              quote: "{{ quote.quote | escape_once }}", 
-              author: "{% if quote.author %}{{ quote.author | escape_once }}{% endif %}" 
-          },
-      {% endfor %}
-  ];
-
-  function displayRandomQuote() {
-      const randomIndex = Math.floor(Math.random() * quotes.length);
-      const randomQuote = quotes[randomIndex];
-
-      document.getElementById("quote").textContent = randomQuote.quote;
-      if (randomQuote.author) {
-          document.getElementById("author").textContent = "- " + randomQuote.author;
-      } else {
-          document.getElementById("author").textContent = ""; // Clear author if not present
-      }
-      // Show the title when JavaScript is enabled
-      document.getElementById("quote-title").style.display = "block";
-  }
-
-  displayRandomQuote(); // Call the function on page load
-</script>
-
-<button onclick="displayRandomQuote()">New Quote</button>
