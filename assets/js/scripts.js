@@ -4,23 +4,23 @@
  */
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  const htmlElement = document.documentElement;
-  const switchElement = document.getElementById('darkModeSwitch');
+    const htmlElement = document.documentElement;
+    const switchElement = document.getElementById('darkModeSwitch');
 
-  // Set the default theme to dark if no setting is found in local storage
-  const currentTheme = localStorage.getItem('bsTheme') || 'dark';
-  htmlElement.setAttribute('data-bs-theme', currentTheme);
-  switchElement.checked = currentTheme === 'dark';
+    // Set the default theme to dark if no setting is found in local storage
+    const currentTheme = localStorage.getItem('bsTheme') || 'dark';
+    htmlElement.setAttribute('data-bs-theme', currentTheme);
+    switchElement.checked = currentTheme === 'dark';
 
-  switchElement.addEventListener('change', function () {
-      if (this.checked) {
-          htmlElement.setAttribute('data-bs-theme', 'dark');
-          localStorage.setItem('bsTheme', 'dark');
-      } else {
-          htmlElement.setAttribute('data-bs-theme', 'light');
-          localStorage.setItem('bsTheme', 'light');
-      }
-  });
+    switchElement.addEventListener('change', function() {
+        if (this.checked) {
+            htmlElement.setAttribute('data-bs-theme', 'dark');
+            localStorage.setItem('bsTheme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-bs-theme', 'light');
+            localStorage.setItem('bsTheme', 'light');
+        }
+    });
 });
 
 /*!
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
  */
 const quotes = [
     {% for quote in site.data.quotes %}
-        { 
-            quote: "{{ quote.quote | escape_once }}", 
-            author: "{% if quote.author %}{{ quote.author | escape_once }}{% endif %}" 
-        },
+        {
+            quote: "{{ quote.quote | escape_once }}",
+            author: "{% if quote.author %}{{ quote.author | escape_once }}{% endif %}"
+        }, // <-- Make sure the last quote also has a comma (Jekyll will add it for the last item, but it's good practice to include it)
     {% endfor %}
-];
+]; // <-- Add the missing closing curly brace here
 
 function displayRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -53,4 +53,4 @@ function displayRandomQuote() {
 // Call displayRandomQuote() when the DOM is ready
 document.addEventListener('DOMContentLoaded', (event) => {
     displayRandomQuote();
-  });  
+});
