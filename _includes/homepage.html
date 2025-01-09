@@ -27,9 +27,11 @@
 <p>From time to time I offer <a href="/coach">coaching engagements</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 <p>[anything] @keivanz.com.</p>
 
-{% assign num_quotes = site.quotes | size %}
+
+
+{% assign num_quotes = site.data.quotes | size %}
 {% assign random_index = (num_quotes | times: random) | floor %}
-{% assign random_quote = site.quotes[random_index] %}
+{% assign random_quote = site.data.quotes[random_index] %}
 
 <div class="quote-container">
   <blockquote>
