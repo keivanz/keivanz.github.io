@@ -34,3 +34,15 @@
       <p class="author">- {{ random_quote.author }}</p>
   {% endif %}
 </div>
+
+{% random_quote %}
+
+{% assign num_quotes = site.quotes | size %}
+{% assign random_index = (num_quotes | times: random) | floor %}
+{% assign random_quote = site.quotes[random_index] %}
+
+<div class="quote-container">
+  <blockquote>
+    <p>"{{ random_quote.text }}"</p>
+  </blockquote>
+</div>
