@@ -27,14 +27,34 @@
 <p>From time to time I offer <a href="/coach">coaching engagements</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 <p>[anything] @keivanz.com.</p>
 
-
-
-{% assign num_quotes = site.data.quotes | size %}
-{% assign random_index = (num_quotes | times: random) | floor %}
-{% assign random_quote = site.data.quotes[random_index] %}
-
-<div class="quote-container">
-  <blockquote>
-    <p>"{{ random_quote.text }}"</p>
-  </blockquote>
+<div id="quote-container">
+  <p id="quote"></p>
+  <p id="author"></p>
 </div>
+
+<script>
+  const quotes = [
+      {% for quote in site.data.quotes %}
+          { 
+              quote: "{{ quote.quote | escape_once }}", 
+              author: "{% if quote.author %}{{ quote.author | escape_once }}{% endif %}" 
+          },
+      {% endfor %}
+  ];
+
+  function displayRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const randomQuote = quotes[randomIndex];
+
+      document.getElementById("quote").textContent = randomQuote.quote;
+      if (randomQuote.author) {
+          document.getElementById("author").textContent = "- " + randomQuote.author;
+      } else {
+          document.getElementById("author").textContent = ""; // Clear author if not present
+      }
+  }
+
+  displayRandomQuote(); // Call the function on page load
+</script>
+
+<button onclick="displayRandomQuote()">New Quote</button>
