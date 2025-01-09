@@ -28,6 +28,7 @@
 <p>[anything] @keivanz.com.</p>
 
 <div id="quote-container">
+  <h6 id="quote-title" style="display: none;">Random Quote</h2>
   <p id="quote"></p>
   <p id="author"></p>
 </div>
@@ -52,6 +53,8 @@
       } else {
           document.getElementById("author").textContent = ""; // Clear author if not present
       }
+      // Show the title when JavaScript is enabled
+      document.getElementById("quote-title").style.display = "block";
   }
 
   displayRandomQuote(); // Call the function on page load
