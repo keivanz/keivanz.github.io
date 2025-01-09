@@ -32,7 +32,7 @@
   <p id="quote"></p>
   <p id="author"></p>
 
-  <button type="button" id="quote_button" style="display: none;" class="btn btn-outline-primary" onclick="displayRandomQuote()">New Quote</button>
+  <button type="button" id="quote-button" style="display: none;" class="btn btn-outline-primary" onclick="displayRandomQuote()">New Quote</button>
 </div>
 
 <script>
@@ -61,5 +61,7 @@
       document.getElementById("quote-button").style.display = "block";
     }
 
-  displayRandomQuote();
+document.addEventListener('DOMContentLoaded', (event) => {
+    displayRandomQuote();
+});
 </script>
