@@ -27,31 +27,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
  * Random quote generator
  * Thank you Gemini for helping me write this
  */
-const quotes = [
-    {% for quote in site.data.quotes %}
-        {
-            quote: "{{ quote.quote | escape_once }}",
-            author: "{% if quote.author %}{{ quote.author | escape_once }}{% endif %}"
-        },
-    {% endfor %}
-];
-
-function displayRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const randomQuote = quotes[randomIndex];
-
-    document.getElementById("quote").textContent = randomQuote.quote;
-    if (randomQuote.author) {
-        document.getElementById("author").textContent = "- " + randomQuote.author;
-    } else {
-        document.getElementById("author").textContent = "";
-    }
-
-    // Show the title when JavaScript is enabled
-    document.getElementById("quote-title").style.display = "block";
-    document.getElementById("quote-button").style.display = "block";
-  }
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  displayRandomQuote();
-});
