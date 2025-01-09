@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const quotes = [
     {% for quote in site.data.quotes %}
         {
-            quote: "{{ quote.quote | escape_once }}",
-            author: "{% if quote.author %}{{ quote.author | escape_once }}{% endif %}"
+            quote: `{{ quote.quote | escape_once }}`, // Use backticks for template literals
+            author: `{% if quote.author %}{{ quote.author | escape_once }}{% endif %}` // Use backticks
         }, // <-- Make sure the last quote also has a comma (Jekyll will add it for the last item, but it's good practice to include it)
     {% endfor %}
 ]; // <-- Add the missing closing curly brace here
