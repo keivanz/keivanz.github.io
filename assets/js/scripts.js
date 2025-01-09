@@ -27,30 +27,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
  * Random quote generator
  * Thank you Gemini for helping me write this
  */
-const quotes = [
-    {% for quote in site.data.quotes %}
-        {
-            quote: `{{ quote.quote | escape_once }}`, // Use backticks for template literals
-            author: `{% if quote.author %}{{ quote.author | escape_once }}{% endif %}` // Use backticks
-        }, // <-- Make sure the last quote also has a comma (Jekyll will add it for the last item, but it's good practice to include it)
-    {% endfor %}
-]; // <-- Add the missing closing curly brace here
-
-function displayRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const randomQuote = quotes[randomIndex];
-
-    document.getElementById("quote").textContent = randomQuote.quote;
-    if (randomQuote.author) {
-        document.getElementById("author").textContent = "- " + randomQuote.author;
-    } else {
-        document.getElementById("author").textContent = ""; // Clear author if not present
-    }
-    // Show the title when JavaScript is enabled
-    document.getElementById("quote-title").style.display = "block";
-}
-
-// Call displayRandomQuote() when the DOM is ready
-document.addEventListener('DOMContentLoaded', (event) => {
-    displayRandomQuote();
-});
