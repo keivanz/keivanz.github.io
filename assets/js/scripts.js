@@ -50,4 +50,7 @@ function displayRandomQuote() {
     document.getElementById("quote-title").style.display = "block";
 }
 
-displayRandomQuote(); // Call the function on page load
+// Call displayRandomQuote() when the DOM is ready
+document.addEventListener('DOMContentLoaded', (event) => {
+    displayRandomQuote();
+  });  
