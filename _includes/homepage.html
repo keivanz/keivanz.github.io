@@ -25,11 +25,20 @@
 </div>
 
 <div id="quote-container">
-  <h6 id="quote-title" class="text-body-secondary mt-5 font_sans_serif" style="display: none;">Random Quote</h2>
+  <div class="container">
+    <div class="row row-cols-2">
+      <div class="col"> 
+        <h6 id="quote-title" class="text-body-secondary mt-5 font_sans_serif" style="display: none;">Random Quote</h2>
+      </div>
+      <div class="col justify-content-end">
+        <button type="button" id="quote-button" style="display: none;" class="btn" onclick="displayRandomQuote()"><i class="fa-solid fa-rotate"></i></button>
+      </div>
+    </div>
+  </div>
+
   <p id="quote" class="mb-0"></p>
   <p id="author"></p>
-
-  <button type="button" id="quote-button" style="display: none;" class="btn btn-outline-primary" onclick="displayRandomQuote()">New Quote</button>
+  
 </div>
 
 <script>
