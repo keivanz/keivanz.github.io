@@ -29,7 +29,7 @@ main {
 a {
   text-underline-offset: .4em;
   text-decoration-thickness: 1.5px;
-  text-decoration-color: --bs-secondary-color; //#ccc
+  text-decoration-color: --bs-primary-color; //#ccc
   transition: .3s ease-out;
   transition-property: all;
 }
@@ -91,7 +91,7 @@ $dark-primary: #7B896F; /* aadd66*/
 
   &:hover {
     a {
-      color: --bs-secondary-color; //#ccc
+      color: --bs-secondary; //#ccc
 
       &:hover {
         color: --bs-emphasis-color; //#000
