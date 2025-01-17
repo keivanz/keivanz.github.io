@@ -80,6 +80,7 @@ a {
   text-decoration-color: var(--bs-tertiary-color); //#ccc
   transition: .3s ease-out;
   transition-property: all;
+  color: inherit;
 }
 a:hover{
   text-decoration-color: currentcolor;
