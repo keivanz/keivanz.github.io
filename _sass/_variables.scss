@@ -1,11 +1,18 @@
-$font-size-base: 1rem;
+// LIGHT VARIABLES
 
 $body-bg: #fcf9ee; /*fff8f3 fbfbfb fcf6eb f6f6f4*/
 
+$primary:#3D4C07; /* 1F3A26 2d452f 125b491D405C*/
+$secondary:#636363; /* 6B9D4A 4C6A4B 003527 */
+
 $btn-bg: #0D0F0D;
 
-$primary:#1F3A26; /* 2d452f 125b491D405C*/
-$secondary:#636363; /* 6B9D4A 4C6A4B 003527 */
+$emphasis-color: #000;
+
+
+// BOTH LIGHT AND DARK:
+
+$font-size-base: 1rem;
 
 $font-family-sans-serif: "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
 $headings-font-family: "Source Serif 4", serif;
