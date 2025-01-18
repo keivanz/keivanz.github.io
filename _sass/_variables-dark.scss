@@ -9,4 +9,8 @@ $btn-bg-dark: #7B896F;
 
 $emphasis-color-dark: #fff; //7B896F
 
-$supporting-color: #252D09;
+$supporting-color: #282726;
+
+$theme-colors: (
+  "supporting-color": $supporting-color 
+);
