@@ -77,7 +77,7 @@ $dark-primary: #7B896F; /* aadd66*/
 a {
   text-underline-offset: .4em;
   text-decoration-thickness: 1.5px;
-  text-decoration-color: var(--underline-color); //#ccc
+  text-decoration-color: var(underline-color); //#ccc
   transition: .3s ease-out;
   transition-property: all;
   color: inherit;
