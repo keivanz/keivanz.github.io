@@ -77,7 +77,7 @@ $dark-primary: #7B896F; /* aadd66*/
 a {
   text-underline-offset: .4em;
   text-decoration-thickness: 1.5px;
-  text-decoration-color: var(--bs-secondary-bg-subtle); //#ccc bs-supporting-color
+  text-decoration-color: var(--bs-secondary-border-subtle); //#ccc bs-supporting-color
   transition: .3s ease-out;
   transition-property: all;
   color: inherit;
@@ -92,7 +92,7 @@ a:hover{
 
   &:hover {
     a {
-      color: var(--bs-secondary-bg-subtle); //#ccc
+      color: var(--bs-secondary-border-subtle); //#ccc
 
       &:hover {
         color: var(--bs-primary-color); //#000
