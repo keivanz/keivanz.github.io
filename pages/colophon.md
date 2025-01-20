@@ -7,7 +7,7 @@ permalink: /colophon/
 This site was coded by Keivan. Sharing how I did it in case you're on a similiar journey:
 
 ### Infrastructure
-* This site was built on [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
+* This site was built on [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). [Read more](https://developers.cloudflare.com/pages/configuration/git-integration/#github-2) on how to connect the two.
 * [Bootstrap](https://getbootstrap.com/) as the CSS framework.
 
 
