@@ -54,10 +54,12 @@ $dark-primary: #7B896F; /* aadd66*/
 .highlight_regular {
   font-family: "Instrument Serif", serif;
   font-style: normal;
+  text-wrap: balance;
 }
 .highlight_italic {
   font-family: "Instrument Serif", serif;
   font-style: italic;
+  text-wrap: balance;
 }
 .source-serif-4 {
   font-family: "Source Serif 4", serif;
@@ -86,6 +88,7 @@ a:hover{
   text-decoration-color: currentcolor;
 }
 
+/*
 .social_links {
   color: inherit;
   transition: .25s ease-out;
@@ -100,6 +103,7 @@ a:hover{
     }
     }
 }
+    */
 
 @view-transition {
   /* required to enable cross-document view transitions*/
