@@ -67,7 +67,7 @@ exclude:
 # 
 # https://github.com/jekyllgems/plugins
 
-#plugins:
+plugins:
   - jekyll-feed
   - jekyll-sass-converter
   - jekyll-redirect-from
