@@ -3,6 +3,8 @@ layout: page
 title: demo
 permalink: /demo/
 draft: true
+sitemap: false
+
 ---
 
 
