@@ -1,6 +1,6 @@
 ---
 layout: page
-title: demo
+title: Demo page
 permalink: /demo/
 draft: true
 sitemap: false

@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
-    /demo
+Disallow: /demo
 Sitemap: https://keivanz.com/sitemap.xml
