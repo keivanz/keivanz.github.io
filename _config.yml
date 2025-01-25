@@ -30,7 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 # URL
 # ===
 #
-url            : "http://keivanz.com" # needed for jekyll-sitemap gem
+url            : "https://keivanz.com" # needed for jekyll-sitemap gem
 
 sass:
   style: expanded
