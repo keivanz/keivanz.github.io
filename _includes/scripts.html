@@ -2,3 +2,16 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
+
+<script type="speculationrules">
+    {
+      "prerender": [{
+        "where": {
+          "and": [
+            { "href_matches": "/*" },
+            { "not": {"selector_matches": ".do-not-prerender"}}
+          ]
+        }
+      }]
+    }
+</script>    
