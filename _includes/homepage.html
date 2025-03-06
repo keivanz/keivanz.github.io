@@ -47,8 +47,8 @@
   const quotes = [
   {% for quote in site.data.quotes %}
     {
-      quote: "{{ quote.quote }}", 
-      author: "{% if quote.author %}{{ quote.author }}{% endif %}" 
+      quote: "{{ quote.quote | escape }}", 
+      author: "{% if quote.author %}{{ quote.author | escape }}{% endif %}" 
     },
   {% endfor %}
 ];
