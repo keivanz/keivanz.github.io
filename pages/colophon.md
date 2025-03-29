@@ -16,7 +16,7 @@ Sharing how I pulled together this site in case you're on a similiar journey:
 * [Icons via Font Awesome](https://fontawesome.com/icons)
 * Fonts
    * [Inter](https://rsms.me/inter/)
-   * Source Serif 4
+   * [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)
 * Quote randomizer was built through Gemini
 * [Colors: Flexoki system](https://stephango.com/flexoki)
 
