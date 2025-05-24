@@ -32,7 +32,6 @@ $dark-primary: #7B896F; /* aadd66*/
 [data-bs-theme="dark"] {
   --bs-primary: #{$dark-primary};
   --bs-primary-bg-subtle: #{$dark-primary};
-  --bs-primary-bg-subtle-dark: #{$dark-primary};
   
   .btn-primary {
     --bs-btn-bg: #{$dark-primary};
