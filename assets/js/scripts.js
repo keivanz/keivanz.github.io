@@ -21,9 +21,53 @@ document.addEventListener('DOMContentLoaded', (event) => {
             localStorage.setItem('bsTheme', 'light');
         }
     });
+
+    // Display a random quote after the DOM is loaded
+    if (typeof displayRandomQuote === 'function') {
+      displayRandomQuote();
+    }
 });
 
 /*!
  * Random quote generator
  * Thank you Gemini for helping me write this
  */
+
+const quotes = [
+  {% for quote in site.data.quotes %}
+    {
+      quote: "{{ quote.quote }}", 
+      author: "{% if quote.author %}{{ quote.author }}{% endif %}" 
+    },
+  {% endfor %}
+];
+
+function displayRandomQuote() {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const randomQuote = quotes[randomIndex];
+
+  // Check if the elements exist before trying to set their content
+  const quoteElement = document.getElementById("quote");
+  const authorElement = document.getElementById("author");
+  const quoteTitleElement = document.getElementById("quote-title");
+  const quoteButtonElement = document.getElementById("quote-button");
+
+  if (quoteElement) {
+    quoteElement.textContent = randomQuote.quote;
+  }
+  if (authorElement) {
+    if (randomQuote.author) {
+      authorElement.textContent = " - " + randomQuote.author;
+    } else {
+      authorElement.textContent = "";
+    }
+  }
+
+  // Show the title and button if they exist
+  if (quoteTitleElement) {
+    quoteTitleElement.style.display = "block";
+  }
+  if (quoteButtonElement) {
+    quoteButtonElement.style.display = "block";
+  }
+}
