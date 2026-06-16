@@ -171,7 +171,7 @@ a:hover{
 /* Base styles overrides */
 
 main h1, main .h1, main h2, main .h2, main h3, main .h3, main h4, main .h4, main h5, main .h5, main h6, main .h6 {
-  margin-top: 1.5rem;
+  margin-top: 2rem !important;
   line-height: 1.5;
 }
 
@@ -208,4 +208,12 @@ table > tbody > tr:hover > * {
 
 main h3, main .h3 {
   font-family: "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+table > tbody > tr > td,
+table > tbody > tr > th,
+table > thead > tr > th,
+table > tfoot > tr > td,
+table > tfoot > tr > th {
+  padding: 0.5rem !important;
 }
