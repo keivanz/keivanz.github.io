@@ -167,3 +167,53 @@ a:hover{
       animation: fade-in .8s ease-in-out forwards
   }
 }*/
+
+/* Base styles overrides */
+
+main h1, main .h1, main h2, main .h2, main h3, main .h3, main h4, main .h4, main h5, main .h5, main h6, main .h6 {
+  margin-top: 2rem !important;
+  line-height: 1.5;
+}
+
+table {
+  @extend .table;
+  @extend .table-striped;
+  @extend .table-hover;
+}
+
+table th, table td {
+  padding: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
+  --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
+  --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
+}
+
+table > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--bs-table-striped-color);
+  --bs-table-bg-type: var(--bs-table-striped-bg);
+}
+
+table > tbody > tr:hover > * {
+  --bs-table-color-state: var(--bs-table-hover-color);
+  --bs-table-bg-state: var(--bs-table-hover-bg);
+}
+
+
+main h3, main .h3 {
+  font-family: "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+table > tbody > tr > td,
+table > tbody > tr > th,
+table > thead > tr > th,
+table > tfoot > tr > td,
+table > tfoot > tr > th {
+  padding: 0.5rem !important;
+}
