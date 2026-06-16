@@ -167,3 +167,44 @@ a:hover{
       animation: fade-in .8s ease-in-out forwards
   }
 }*/
+
+/* Base styles overrides */
+
+main h1, main .h1, main h2, main .h2, main h3, main .h3, main h4, main .h4, main h5, main .h5, main h6, main .h6 {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+table {
+  @extend .table;
+  @extend .table-striped;
+  @extend .table-hover;
+  @extend .table-responsive;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+table th, table td {
+  padding: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
+  --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
+  --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
+}
+
+table > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--bs-table-striped-color);
+  --bs-table-bg-type: var(--bs-table-striped-bg);
+}
+
+table > tbody > tr:hover > * {
+  --bs-table-color-state: var(--bs-table-hover-color);
+  --bs-table-bg-state: var(--bs-table-hover-bg);
+}
