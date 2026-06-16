@@ -136,11 +136,6 @@ Example: "When you agree in meetings but execute differently (Observation), it s
 * Selling: Inspiring others via compelling narrative.
 * Systems: Building structures so success endures without you.
 
-# Unlock your potential through 1:1 coaching
-
-In world-class athletics, the necessity of a coach is unquestioned. The most gifted tennis players, gymnasts, and runners in the world do not hire coaches because they lack technical knowledge or skill. They hire coaches to obtain objective feedback, push past blind spots, build rigorous self-awareness, and strategically analyze their game.
-The same rule applies to organizational leadership. Operating at a high level is a grueling endurance test. To scale yourself and your team, relying on your own instincts is rarely enough.
-
 ### The Support Spectrum
 
 Understanding the difference between different professional advocates is crucial:
