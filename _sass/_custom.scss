@@ -180,19 +180,13 @@ a:hover{
   }
 }
 
-header:not(.sitetitle), main > *:not(.sitetitle), footer:not(.sitetitle) {
+header > *:not(:has(.sitetitle)):not(.sitetitle), main > *:not(.sitetitle), footer:not(.sitetitle) {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-header:not(.sitetitle) {
+header > *:not(:has(.sitetitle)):not(.sitetitle) {
   animation-delay: 0.1s;
-}
-
-.sitetitle {
-  animation: none !important;
-  opacity: 1 !important;
-  transform: none !important;
 }
 
 main > *:nth-child(1) { animation-delay: 0.2s; }
@@ -212,15 +206,15 @@ main > *:nth-child(14) { animation-delay: 1.5s; }
 main > *:nth-child(15) { animation-delay: 1.6s; }
 main > *:nth-child(n+16) { animation-delay: 1.7s; }
 
-footer {
+footer:not(.sitetitle) {
   animation-delay: 1.8s;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  header, main > *, footer {
-    animation: none;
-    opacity: 1;
-    transform: none;
+  header > *:not(:has(.sitetitle)):not(.sitetitle), main > *:not(.sitetitle), footer:not(.sitetitle) {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 
