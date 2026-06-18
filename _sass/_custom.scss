@@ -180,13 +180,19 @@ a:hover{
   }
 }
 
-header, main > *, footer {
+header:not(.sitetitle), main > *:not(.sitetitle), footer:not(.sitetitle) {
   opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
-header {
+header:not(.sitetitle) {
   animation-delay: 0.1s;
+}
+
+.sitetitle {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 main > *:nth-child(1) { animation-delay: 0.2s; }
